@@ -6409,15 +6409,15 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .breadcrumbs__link::before {
   content: "";
-  width: 11px;
-  height: 14px;
+  width: 9px;
+  height: 6px;
   background-image: url("../img/icons/arrow-breadcrumbs.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   position: absolute;
-  left: -20px;
-  bottom: 2px;
+  left: -18px;
+  bottom: 5px;
 }
 
 .breadcrumbs__link:first-child:before {
