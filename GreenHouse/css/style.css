@@ -2862,6 +2862,22 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   text-align: right;
 }
 
+.profit {
+  color: #fff;
+}
+
+.profit a {
+  font-weight: 700;
+  color: #dbb878;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.profit a:hover {
+  color: #fff;
+}
+
 .lines {
   padding: 0px 8%;
   width: 100%;
