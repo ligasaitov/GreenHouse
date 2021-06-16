@@ -1902,7 +1902,7 @@ let slider_main = new Swiper('.main__slider', {
 
 	effect: 'fade',
 	autoplay: {
-		delay: 5000,
+		delay: 3000,
 		disableOnInteraction: false,
 	},
 
