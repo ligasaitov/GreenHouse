@@ -1994,13 +1994,18 @@ let slider_catalog = new Swiper('.catalog__slider', {
 	// type: 'fraction',
 	// },
 	breakpoints: {
-		991.98: {
+		1213: {
 			slidesPerView: 3,
 			// centeredSlides: true,
 			spaceBetween: 0,
 		},
+		768: {
+			slidesPerView: 2,
+			// centeredSlides: false,
+			spaceBetween: 0,
+		},
 		320: {
-			slidesPerView: 3,
+			slidesPerView: 1,
 			// centeredSlides: false,
 			spaceBetween: 0,
 		},
