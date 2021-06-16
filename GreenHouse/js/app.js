@@ -1898,6 +1898,124 @@ if (sliderScrollItems.length > 0) {
 	}
 }
 
+let slider_main = new Swiper('.main__slider', {
+
+	effect: 'fade',
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false,
+	},
+
+	observer: true,
+	observeParents: true,
+	slidesPerView: 1,
+	// centeredSlides: true,
+	// initialSlide: 1,
+	spaceBetween: 0,
+	autoHeight: false,
+	speed: 800,
+	roundLengths: true,
+	//touchRatio: 0,
+	//simulateTouch: false,
+	loop: true,
+	//preloadImages: false,
+	lazy: true,
+	// Dotts
+	// pagination: {
+	// 	el: '.class__quality_pagging',
+	// 	clickable: true,
+	// },
+	// Arrows
+	// navigation: {
+	// nextEl: '.photogallery__arrows .slider__next',
+	// prevEl: '.photogallery__arrows .slider__prev',
+	// },
+	// pagination: {
+	// el: '.photogallery__pagination',
+	// type: 'fraction',
+	// },
+	breakpoints: {
+		991.98: {
+			slidesPerView: 1,
+			// centeredSlides: true,
+			spaceBetween: 0,
+		},
+		320: {
+			slidesPerView: 1,
+			// centeredSlides: false,
+			spaceBetween: 0,
+		},
+	},
+	on: {
+		lazyImageReady: function () {
+			ibg();
+		},
+	},
+	// And if we need scrollbar
+	//scrollbar: {
+	//	el: '.swiper-scrollbar',
+	//},
+});
+
+let slider_catalog = new Swiper('.catalog__slider', {
+
+	// effect: 'fade',
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false,
+	},
+
+	observer: true,
+	observeParents: true,
+	slidesPerView: 3,
+	// centeredSlides: true,
+	// initialSlide: 1,
+	spaceBetween: 0,
+	autoHeight: false,
+	speed: 800,
+	roundLengths: true,
+	//touchRatio: 0,
+	//simulateTouch: false,
+	loop: false,
+	//preloadImages: false,
+	lazy: true,
+	// Dotts
+	// pagination: {
+	// 	el: '.class__quality_pagging',
+	// 	clickable: true,
+	// },
+	// Arrows
+	// navigation: {
+	// nextEl: '.photogallery__arrows .slider__next',
+	// prevEl: '.photogallery__arrows .slider__prev',
+	// },
+	// pagination: {
+	// el: '.photogallery__pagination',
+	// type: 'fraction',
+	// },
+	breakpoints: {
+		991.98: {
+			slidesPerView: 3,
+			// centeredSlides: true,
+			spaceBetween: 0,
+		},
+		320: {
+			slidesPerView: 3,
+			// centeredSlides: false,
+			spaceBetween: 0,
+		},
+	},
+	on: {
+		lazyImageReady: function () {
+			ibg();
+		},
+	},
+	// And if we need scrollbar
+	//scrollbar: {
+	//	el: '.swiper-scrollbar',
+	//},
+});
+
 let slider_photogallery = new Swiper('.photogallery__slider', {
 
 	// effect: 'fade',

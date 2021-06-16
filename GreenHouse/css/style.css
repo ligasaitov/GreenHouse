@@ -3045,10 +3045,6 @@ section {
   width: 100%;
   height: 100vh;
   min-height: 800px;
-  background-image: url("../img/main.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   margin-top: -95px;
   padding-top: 175px;
   z-index: 1;
@@ -3058,6 +3054,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .main__left {
@@ -3249,6 +3246,26 @@ section {
   position: absolute;
   right: 81px;
   bottom: 56px;
+}
+
+.main__slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.main__slider:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .video__text {
@@ -3595,6 +3612,7 @@ section {
 
 .about__image img {
   max-width: 100%;
+  max-height: 100%;
 }
 
 .about__content {
@@ -7549,7 +7567,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     -ms-transform: translate3d(100%, 0px, 0px);
     -o-transform: translate3d(100%, 0px, 0px);
     -moz-transform: translate3d(100%, 0px, 0px);
-    padding-left: 65px;
+    padding-left: 225px;
+    max-height: 340px;
   }
 
   .about__body {
@@ -8146,7 +8165,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .lg-outer .lg-item{background:url("../img/icons/loading.gif") no-repeat scroll center center transparent}
 .logo__link:before{background-image:url("../img/leaf.svg")}
 .link-about:after{background-image:url("../img/arrow-about.webp")}
-.main{background-image:url("../img/main.webp")}
 .main__text:after{background-image:url("../img/arrow-catalog.svg")}
 .main__button{background:url("../img/Booklet.webp") no-repeat 106% center, -o-linear-gradient(356.87deg, #dbb878 -5.12%, #975a22 97.89%, #975a22 97.89%)}
 .main__button{background:url("../img/Booklet.webp") no-repeat 106% center, linear-gradient(93.13deg, #dbb878 -5.12%, #975a22 97.89%, #975a22 97.89%)}
