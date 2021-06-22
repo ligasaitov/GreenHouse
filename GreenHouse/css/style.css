@@ -2383,6 +2383,26 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   top: -220px;
 }
 
+.popup_privacy .popup__close:before,
+.popup_privacy .popup__close:after {
+  background: #000;
+}
+
+.popup_privacy p,
+.popup_privacy span,
+.popup_privacy a,
+.popup_privacy h1,
+.popup_privacy h2,
+.popup_privacy h3,
+.popup_privacy h4,
+.popup_privacy h5,
+.popup_privacy h6,
+.popup_privacy ul,
+.popup_privacy ol,
+.popup_privacy li {
+  color: #222121;
+}
+
 .header {
   padding: 25px 0;
   z-index: 4;
@@ -2830,6 +2850,19 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__bottom-row a {
+  color: #dbb878;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.footer__bottom-row a:hover {
+  color: #fff;
 }
 
 .footer-left {
